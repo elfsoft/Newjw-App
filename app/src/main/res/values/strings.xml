@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">掌上东软</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_login">掌上东软</string>
+    <string name="title_activity_grade">分数查询</string>
+    <string name="login_status">正在检测登录状态...</string>
+    <string name="search">查询</string>
+    <string name="grade_class">课程：</string>
+    <string name="grade_rank">学分：</string>
+    <string name="class_type">类型：</string>
+    <string name="grade_type">类型：</string>
+    <string name="grade_exam">考试：</string>
+    <string name="grade_xingzhi">性质：</string>
+    <string name="grade_grade">分数：</string>
+    <string name="grade_point">绩点：</string>
+    <string name="grade_gradepoint">学分绩点：</string>
+    <string name="title_activity_schedule">课表查询</string>
+    <string name="monday">星期一</string>
+    <string name="tue">星期二</string>
+    <string name="title_activity_exam">考试查询</string>
+    <string name="exam_time">时间：</string>
+    <string name="exam_location">教室：</string>
+    <string name="exam_position">座位：</string>
+    <string name="title_activity_in_school_login">掌上东软</string>
+    <string name="title_activity_leave_info">请假信息</string>
+    <string name="leave">请假</string>
+    <string name="title_activity_leave_apply">掌上东软</string>
+    <string name="start_date">开始日期</string>
+    <string name="end_date">结束日期</string>
+
+    <string-array name="section">
+        <item>晨读</item>
+        <item>第1节</item>
+        <item>第2节</item>
+        <item>第3节</item>
+        <item>第4节</item>
+        <item>第5节</item>
+        <item>第6节</item>
+        <item>第7节</item>
+        <item>第8节</item>
+        <item>第9节</item>
+        <item>第10节</item>
+        <item>第11节</item>
+    </string-array>
+
+    <string name="leave_teacher">辅导员：</string>
+    <string name="phone_number">手机号码</string>
+    <string name="leave_reason">请假原因</string>
+    <string name="title_activity_social">SocialActivity</string>
+    <string name="password">密码</string>
+    <string name="named">昵称（暂不支持修改）</string>
+    <string name="title_activity_empty_room">空教室查询</string>
+    <string name="title_activity_about">关于</string>
+    <string name="title_activity_kao_qin">考勤信息</string>
+    <string name="title_activity_elf">精灵公告</string>
+
+</resources>

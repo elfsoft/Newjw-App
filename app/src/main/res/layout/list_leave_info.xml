@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listview_selector"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/leaveYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13-14"
+            android:textColor="@color/fontcolor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="学年"
+            android:textColor="@color/fontcolor" />
+
+        <TextView
+            android:id="@+id/leaveType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="事假"
+            android:textColor="@color/fontcolor" />
+
+        <TextView
+            android:id="@+id/leaveTeacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="刘利军"
+            android:textColor="@color/fontcolor" />
+
+        <TextView
+            android:id="@+id/leaveStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="通过"
+            android:textColor="@color/fontcolor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/leaveStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2013-11-11/晨读"
+            android:textColor="@color/fontcolor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  -  "
+            android:textColor="@color/fontcolor" />
+
+        <TextView
+            android:id="@+id/leaveEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2013-11-11/晨读"
+            android:textColor="@color/fontcolor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请假原因："
+            android:textColor="@color/fontcolor" />
+
+        <TextView
+            android:id="@+id/leaveReason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2013-11-11/晨读"
+            android:textColor="@color/fontcolor" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,567 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="${packageName}.${activityClass}" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/background" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/div_bg"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/schedule_bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="150" />
+
+            <Button
+                android:id="@+id/schedule_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="50"
+                android:background="@drawable/btn_style"
+                android:onClick="search"
+                android:paddingBottom="2dp"
+                android:text="@string/search"
+                android:textColor="@color/fontcolor"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scroll_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayout1"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/scroll_div_bg"
+            android:visibility="invisible" >
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/focus"
+                android:paddingBottom="20dp" >
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/scroll_div_bg" >
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/monday"
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/tue"
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="星期三"
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="星期四"
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="星期五"
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="星期六"
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="星期天"
+                            android:textColor="@color/fontcolor" />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/fontcolor" />
+
+                    <TableRow
+                        android:id="@+id/tableRow2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="第\n1\n/\n2\n节"
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/one_one"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/one_two"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/one_three"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/one_four"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/one_five"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/one_six"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/one_seven"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/fontcolor" />
+
+                    <TableRow
+                        android:id="@+id/tableRow3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="第\n3\n/\n4\n节"
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/two_one"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/two_two"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/two_three"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/two_four"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/two_five"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/two_six"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/two_seven"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/fontcolor" />
+
+                    <TableRow
+                        android:id="@+id/tableRow4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="第\n5\n/\n6\n节"
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/three_one"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/three_two"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/three_three"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/three_four"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/three_five"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/three_six"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/three_seven"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/fontcolor" />
+
+                    <TableRow
+                        android:id="@+id/tableRow5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="第\n7\n/\n8\n节"
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/four_one"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/four_two"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/four_three"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/four_four"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/four_five"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/four_six"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/four_seven"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/fontcolor" />
+
+                    <TableRow
+                        android:id="@+id/tableRow6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="第\n9\n/\n10\n节"
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/five_one"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/five_two"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/five_three"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/five_four"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/five_five"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/five_six"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+
+                        <TextView
+                            android:id="@+id/five_seven"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/fontcolor" />
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+        </ScrollView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/wait_schedule"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#55000000"
+        android:gravity="center" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:scaleType="matrix" />
+    </LinearLayout>
+
+</FrameLayout>

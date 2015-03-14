@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="term_spinner">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="exam_spinner">
+        <item>中考</item>
+        <item>末考</item>
+        <item>补考</item>
+    </string-array>
+
+</resources>

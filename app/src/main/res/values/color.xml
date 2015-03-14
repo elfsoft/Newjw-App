@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#eaecef</color>
+    <color name="fontcolor">#014898</color>
+    <color name="focus">#ffffff</color>
+    <color name="focus2">#7ba4ef</color>
+    <color name="mygreen">#FFFFFF</color>
+    <color name="gray">#e7e8e9</color>
+</resources>
